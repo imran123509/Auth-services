@@ -12,8 +12,8 @@ app.use('/api', apiRoutes);
 
 app.listen(PORT, async ()=>{
     console.log(`server started ${PORT}`);
-    const incomingpass='123456';
-    const user=await User.findByPk(3);
-    const response=bcrypt.genSaltSync(incomingpass, user.password);
-    console.log(response)
+    // const incomingpass='123456';
+    // const user=await User.findByPk(3);
+    // const response=bcrypt.genSaltSync(incomingpass, user.password);
+    // console.log(response)
 });
